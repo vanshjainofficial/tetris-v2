@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Tetris by Vansh Jain</title>
+    <base href="/">
+    <script>
+      (function () {
+        var w = parseInt(window.screen.width),
+          s = w / 640,
+          u = navigator.userAgent.toLowerCase(),
+          m = '<meta name="viewport" content="width=640,';
+        if (/android (\d+\.\d+)/.test(u)) {
+          if (parseFloat(RegExp.$1) > 2.3)
+            m += 'minimum-scale=' + s + ',maximum-scale=' + s + ',';
+        } else {
+          m += 'user-scalable=no,';
+        }
+        m += 'target-densitydpi=device-dpi">';
+        document.write(m);
+      })();
+    </script>
+
+    <!-- Meta Tags -->
+    <meta name="title" content="Angular Tetris by Vansh Jain">
+    <meta name="description" content="A nostalgic Tetris game built with Angular and Akita.">
+
+    <!-- Social Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Angular Tetris by Vansh Jain">
+    <meta property="og:description" content="A nostalgic Tetris game built with Angular and Akita.">
+    <meta property="og:image" content="assets/readme/tetris-social-cover.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourdomain.com/">
+    <meta name="twitter:title" content="Angular Tetris by Vansh Jain">
+    <meta name="twitter:description" content="A nostalgic Tetris game built with Angular and Akita.">
+    <meta name="twitter:image" content="assets/readme/tetris-social-cover.png">
+
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+  </head>
+
+  <body>
+    <app-root></app-root>
+
+    <!-- Bottom-left credit tag -->
+<div style="
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left top;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 0 0 4px 4px;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+  pointer-events: none;
+">
+  Made by Vansh Jain
+</div>
+    <script src="/assets/js/AudioContextMonkeyPatch.js"></script>
+    <script>
+      var gtag;
+    </script>
+  </body>
+</html>
