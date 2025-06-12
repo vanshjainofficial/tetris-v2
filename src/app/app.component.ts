@@ -3,7 +3,7 @@ import { AngularTetrisComponent } from './containers/angular-tetris/angular-tetr
 
 @Component({
   standalone: true,
-  selector: 't-root', 
+  selector: 'app-root', 
   imports: [AngularTetrisComponent],
   template: '<angular-tetris></angular-tetris>',
   styleUrls: ['./app.component.scss']
